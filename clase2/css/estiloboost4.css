@@ -1,0 +1,12 @@
+html, body{
+    height: 100%;
+}
+
+
+.inicio{
+    
+    height: 100vh;
+    background: url("../paisajefondo.jpg") ;
+    background-size: cover;
+    background-position: center;
+}
