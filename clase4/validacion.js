@@ -5,7 +5,7 @@ function validarformularios(){
     const txtDescripcion = document.getElementById("txtDescripcion")
     const selectDeportes = document.getElementById("deportes")
 
-  
+
 
     if(txtNombre.value === ''){
         alert("El nombre es requerido")

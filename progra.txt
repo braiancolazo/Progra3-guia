@@ -59,7 +59,7 @@ polimorfismo:capacidad de responder al mismo objeto de forma distinta
 trabajamos con tcip.
 ===:evalua que el valor y el tipo sean iguales.
 ==:evalua que el valor sea igual.
-
+jquery es un intermediario entre el cliente y el usuario.
 
 
 
