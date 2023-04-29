@@ -1,0 +1,90 @@
+el get no tiene un body, tiene un limite de caracteres
+restfull
+submit es un post al servidor mandondele al body atraves un json.
+serealizar busca convert ese obj en un array de bites
+deserealizacion lo contrario
+fuscacion es una forma de scriptear.
+http
+https: scriptado
+vireshart()
+w3school.
+css archivo para modificar el estilo de varios html.
+boostrap = estirarte la boostrap
+se puede hacer responsive la pag
+se pueden usar componentes propios de boostrap.
+es una libreria que es codigo de terceros creada por una empresa.
+divide la pantalla en un conjunto de filas y columnas.
+12 columnas y infina filas.
+con los pixeles se sabe los breakpuntos(puntos de quiebre).
+gestores de packetes npm,yarn(para instalar dependecias).
+js para que las paginas no sean estaticas
+ .mem esta comprido(en una sola linea)
+
+
+ primer parcial viernes 19/05
+ segundo parcial viernes 23/06
+ recuperatorio 30/06
+
+
+javascript
+cuando aparecio?
+se encuentra en una pagina web,desarrolo mobile,framework, aplicaciones de escritorio.
+.net maui con net core >6(windows y mac,android y iOs)
+Electron (como angular y react).
+blazor(framework de .net):
+Framework:
+React(node.js),Angular(.net y trabaja con typescript) y vue.js
+pwa:instalas las paginas como aplicaciones(correo,spotify).
+sdk:
+runtime:es solo para los servidores.
+
+2 enfoques:
+nativo: lenguaje propio del dispositivo del celular,para apple switf para android kotlin siempre es mejor programar en nativo que hibrido.
+hibrido:mostrar las soluciones en 2 dispositivos(android y iOs) de la misma forma.
+framework hibrido;
+react native y ionic(se puede usar angular,react y vue).
+jquery libreria que ayuda  a escribir js
+dom forma de representar la pagina web en una estructura de arbol.
+los console log se usan para testear que fallo.
+
+npm init crea el json
+tarea subir las clases
+401: no tenemos permiso
+403: no estamos permitido
+404:recurso no encontrable
+
+validaciones:
+firma de un metodo de cada funcion:cantidad de parametros y tipos de parametros
+polimorfismo:capacidad de responder al mismo objeto de forma distinta
+trabajamos con tcip.
+===:evalua que el valor y el tipo sean iguales.
+==:evalua que el valor sea igual.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
