@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #panel,#flip{
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+        #panel{
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">
+        Este es un <b>parrafo</b> muy importante,porque <strong>si</strong>
+    </p>
+    <p id="p2">
+        Este es otro <b>parrafo</b> muy importante,porque <strong>si</strong>
+    </p>
+    <p><input type="text" id="inputext" value="Nico"></p>
+    <button id="btn1">set texto</button>
+    <button id="btn2">set html</button>
+    <button id="btn3">set value</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#p1").text("holachicos")
+            })
+
+            $("#btn2").click(function(){
+                $("#p2").html("<b>Quiero terminar ya<b/>")
+            })
+            $("#btn3").click(function(){
+                $("#inputext").val("nico")
+            })
+            
+        })
+    </script>
+</body>
+</html>

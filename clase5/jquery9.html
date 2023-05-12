@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nombre: <input type="text" name="nombreCompleto">
+    <br>
+    Email: <input type="text" name="email">
+    <h2>Nuevo ejemplo de jquery</h2>
+    <p id="primero">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae porro atque esse optio vel repellendus molestias nesciunt cupiditate sit, voluptatem, amet sunt est eius praesentium, et rem recusandae odit quo.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut molestias doloribus minus debitis quod nostrum accusantium? Optio quos autem quaerat at odio. Maiores, blanditiis ex eum voluptas expedita aut repudiandae.</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("background-color","yellow")
+            })
+            $("input").blur(function(){
+                $(this).css("background-color","green")
+            })
+        })
+    </script>
+</body>
+</html>

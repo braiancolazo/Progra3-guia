@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina1 </title>
+</head>
+<body>
+    <h1>Pagina 1</h1>
+    <button onclick="redirigir()">ir a pagina 2</button>
+    <script>
+        localStorage.setItem("usuario","nico")
+        function Redirigir(){
+            window.Location.replace("./redirect1.html")
+        }
+    </script>
+</body>
+</html>
