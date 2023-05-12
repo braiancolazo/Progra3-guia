@@ -70,18 +70,20 @@
             }
         })
         $.validator.addMethod('noEmpezarConGuion', function(value,element,param){
-            if(value.startswith(param)){
+            if(value.startsWith(param)){
                 return false
             }else{
                 return true
             }
+            
         })
         $(document).ready(function(){
+            console.log("ready")
             $('#formulario').validate({
                 rules:{
                     nombre:{
                         required:true,
-                        minlengyh:4,
+                        minlength:4,
                         noEmpezarConGuion:'_'
                     },
                     email:{
@@ -107,7 +109,10 @@
                 messages:{
                     nombre:{
                         required:'porfavor ingrese un nombre',
-                        minlength:'debe tener almenos 4 caracteres'
+                        minlength:'debe tener almenos 4 caracteres',
+                        noEmpezarConGuion:'El nombre no debe empezar con _'
+
+                        
                     },
                     email:{
                         required:'el email es requerido',
