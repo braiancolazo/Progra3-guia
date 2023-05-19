@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>login</title>
+</head>
+<body>
+
+    <h1>Registro de personas</h1>
+    <form id="formulariologin">
+        <div class="form-row">
+            <div class="form-group col-6">
+                <label for="">Nombre</label>
+                <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese su nombre" name="nombre">
+            </div>
+            <div class="form-group col-6">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" name="apellido" id="txtApellido" placeholder="Ingrese su apellido" >
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <label for="">Sexo</label>
+                <div>
+                    <div class="form-check-inline">
+                        <input type="radio" class="form-check-input" name="sexo" id="">
+                        <label class="form-check-label">Maculino</label>
+                        
+
+                    </div>
+
+                    <div class="form-check-inline">
+                        <input type="radio" class="form-check-input" name="sexo" id="">
+                        <label class="form-check-label">Femenino</label>
+                        
+
+                    </div>
+
+                    <div class="form-check-inline">
+                        <input type="radio" class="form-check-input" name="sexo" id="">
+                        <label class="form-check-label">Otros</label>
+                        
+
+                    </div>
+                    
+                </div>
+
+            </div>
+        
+            <div class="form-group col-6">
+                <label for="">Deporte</label>
+                <select name="deportes"class="form-control" id="deportes">
+                    <option value="tenis">Tenis</option>
+                    <option value="futbol">Futbol</option>
+                    <option value="rugby">Rugby</option>
+                    <option value="padel">Padel</option>
+                </select>
+            </div>
+        </div>
+
+        
+            <div class="form-group">
+                <label for="">Descricion</label>
+                <textarea name=""  class="form-control" id="txtDescripcion" cols="00" rows="10"></textarea>
+            </div>
+
+            <input type="submit" value="Guardar" class="btn btn-success">
+
+        
+    </form>
+    
+    
+    <!--boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- jqueryvalidator -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+
+
+    <script>
+        function Redirigir (){
+            window.location.replace("./redirect1.html")
+            
+        }
+        $.validator.setDefaults({
+            submitHandler: function(){
+                alert("inicio sesion")
+
+            }
+        })
+        $.validator.addMethod('ingresarContraseña', function(value,param){
+            return value === '1234'
+        })
+        $(document).ready(function(){
+            $("#formulariologin").validate({
+                rules:{
+                    nombre:{
+                        required:true,
+                    },
+                    apellido:{
+                        required:true,
+                        minlength:4,
+                    
+                    },
+                    sexo:{
+                        required:true,
+                    },
+                    deportes:{
+                        required:true,
+                    }
+
+                },
+                messages:{
+                    nombre:{
+                        required:'ingrese un nombre',
+                        
+                    },
+                    apellido:{
+                        required:'ingrese un apellido',
+                        minlength:'ingrese minimo 4 digitos',
+                    },
+                    sexo:{
+                        required:'seleccione un sexo',
+                    },
+                    deportes:{
+                        required:'seleccione un deporte',
+                    }
+                   
+                },
+                errorClass: 'text-danger',
+                errorElement:'label',
+
+            })
+        })
+    </script>
+</body>
+</html>

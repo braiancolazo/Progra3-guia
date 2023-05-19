@@ -7,50 +7,64 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
+</head>
 <body>
     <div class="container">
-        <h3>formulario</h3>
         <form id="formulario">
-
             <div class="form-group">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" class="form-control">
-            </div>
+                <input type="text" name="nombre" id="nombre" class="form-control">
 
+            </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" class="form-control">
+                <input type="email" name="email" id="email" class="form-control">
                 
             </div>
-
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" class="form-control">
+                <input type="password" name="password" id="password" class="form-control">
                 
             </div>
             <div class="form-group">
-                <label for="confirmarpassword">Password</label>
-                <input type="password" id="confirmarpassword" name="confirmarpassword" class="form-control">
+                <label for="cpassword">Confirmar Password</label>
+                <input type="password" name="cpassword" id="cpassword" class="form-control">
+                
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentarios</label>
+                <textarea name="comentario" id="comentario" cols="40" rows="10" class="form-control"></textarea>
                 
             </div>
 
             <div class="form-group">
-                <label for="comentarios">Comentarios</label>
-                <textarea name="comentarios" id="comentarios" cols="40" rows="10" class="form-control"></textarea>
-
-            </div>
-
-            <div class="form-group">
-                <label for="chkAceptar">
-                    <input type="checkbox"  name="chkAceptar" id="chkAceptar" value="acepto">
-                    Acepto los terminos y condiciones
+                <label for="nombre">
+                    <input type="checkbox" name="chk" id="chk">Acepto los terminos
                 </label>
                 
                 
             </div>
-            <input type="submit" class="btn btn-primary" value="Cargar">
+            <input type="submit" name="cargar" id="cargar" value="cargar" class="btn btn-primary">
         </form>
     </div>
+    <script>
+         function Redirigir(){
+            window.location.replace("./redirect2.html")
+            
+        }
+    </script>
+ 
+
+
+
+
+
+
+
+
+    
+
+
     <!--boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
@@ -63,10 +77,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
 
+
+
     <script>
         $.validator.setDefaults({
             submitHandler: function(){
                 alert('paso todo correctamente')
+                Redirigir()
+                
             }
         })
         $.validator.addMethod('noEmpezarConGuion', function(value,element,param){
@@ -77,15 +95,18 @@
             }
             
         })
+        $.validator.addMethod('passwordCheck', function(value) {
+            return value === '12345';
+        })
 
         $(document).ready(function(){
             console.log("ready")
-            $('#formulario').validate({
+            $("#formulario").validate({
                 rules:{
                     nombre:{
                         required:true,
-                        minlength:4,
-                        noEmpezarConGuion:'_'
+                        minlength:4
+
                     },
                     email:{
                         required:true,
@@ -93,58 +114,56 @@
                     },
                     password:{
                         required:true,
-                        minlength:8,
-                        equalTo:'123456789'
-
+                        minlength:4,
+                        passwordCheck:"12345"
                     },
-                    confirmarpassword:{
+                    cpassword:{
                         required:true,
-                        minlength:8,
+                        minlength:4,
                         equalTo:'#password'
                     },
-                    comentarios:{
+                    comentario:{
                         required:true
+
                     },
-                    chkAceptar:{
+                    chk:{
                         required:true
                     }
+
                 },
                 messages:{
                     nombre:{
-                        required:'porfavor ingrese un nombre',
-                        minlength:'debe tener almenos 4 caracteres',
-                        noEmpezarConGuion:'El nombre no debe empezar con _'
+                        required:'ingrese nombre',
+                        minlength:'ingrese minimo 4 digitos'
 
-                        
                     },
                     email:{
-                        required:'el email es requerido',
-                        email:'introduzca un email valido'
+                        required:'ingrese email',
+                        email:'no es un email'
                     },
                     password:{
-                        required:'la contraseña es reqieroda',
-                        minlength:'la contraseña debe tener al menos 8 caracteres',
-                        equalTo: 'la contra es incorrecta'
+                        required:'ingrese una contrasenia',
+                        minlength:'ingrese minimo 8 digitos',
+                        passwordCheck:'La contraseña debe ser igual a 12345',
                     },
-                    confirmarpassword:{
-                        required:'la confirmacion es requerida ',
-                        minlength:'la contraseña debe tener al menos 8 caracteres',
-                        equalTo:'contraseña no coincide'
+                    cpassword:{
+                        required:'confirme la contrasenia',
+                        minlength:'ingrese minimo 8 digitos',
+                        equalTo:'las contrasenias no considen'
                     },
-                    comentarios:{
-                        required:'los comentarios son requeridos'
-                    },
-                    chkAceptar:{
-                        required:'Por favor acepte los terminos y condiciones'
-                    }
-                },
-                errorClass: 'text-primary',
-                errorElement: 'label',
-                
+                    comentario:{
+                        required:'ingrese un comentario'
 
+                    },
+                    chk:{
+                        required:'acepte los terminos'
+                    }
+                    
+                },
+                errorClass:'text-primary',
+                errorelement: 'label'
             })
         })
     </script>
-
 </body>
 </html>
