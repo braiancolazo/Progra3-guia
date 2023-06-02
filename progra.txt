@@ -60,7 +60,34 @@ trabajamos con tcip.
 ===:evalua que el valor y el tipo sean iguales.
 ==:evalua que el valor sea igual.
 jquery es un intermediario entre el cliente y el usuario.
-
+12 columnas boostrap
+pagina web como carta de presentacion y curriculum vitae css,js,boostrap.
+dividir por section.
+dif
+unica la forma ,servidor tiene que ser en windows.
+que es docker es un contenedor.
+es dockerisar una imagen.
+net core multiplataforma.
+sdk necesita el net.
+servidor tiene que tener el runtime.
+orm mapeador de objetos.
+taper,entityframwork,
+relacionales,no relacionales,
+hay tablas que tienen filas columnas que se relacionan entre siempre
+no relacionales:hay varios tipos pero lo mas conocidas son las claves valor.
+api:es una interfaz
+web service:utiliza soap y devuelve xml rest.
+controler
+forma de organizar las entidades
+forma logica de estructurar comportamientos y agrupar comportamientos.
+patron sqr
+microsoft.entityframworkcore.design
+ingresar a la carpeta 
+por unica 
+dotnet tool install --global dotnet-ef
+migraciones:historial de tablas,inserts,update.
+dotnet ef migrations add (nombre que quieras).
+dotnet ef database update
 
 
 
