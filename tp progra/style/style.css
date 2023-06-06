@@ -1,0 +1,117 @@
+
+body{
+    background-color: bisque;
+}
+#imagen-presentacion{
+   
+    width: 20%;
+    transition: transform .2s ;
+ 
+    margin-top: 10%;
+    margin-left:auto ;
+    margin-right: auto;
+    margin-bottom: 2%;
+    
+
+}
+#imagen-presentacion:hover{
+    transform: scale(300%);
+
+}
+#presentacion-t1{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+   
+    
+}
+#presentacion-t2{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+    
+
+}
+#titlesb{
+    display: block;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+    margin-bottom: 4%;
+}
+#psb{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}   
+#titleh{
+    
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+  
+}
+
+
+
+
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer-links li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.social-links p {
+  display: inline-block;
+  margin-left: 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social-links p:hover {
+  color: #000;
+}
+
+.card{
+    border: none;
+}
+
+.card-img-top{
+    transition: transform .2s ;
+
+}
+
+.card-img-top:hover{
+    transform: scale(1.2); ;
+}
+
+
+
+
+
+
+

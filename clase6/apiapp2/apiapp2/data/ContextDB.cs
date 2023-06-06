@@ -11,7 +11,9 @@ namespace apiapp2.data
         }
         public DbSet<Persona> Personas { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
 
-        public DbSet<Categoria>Categorias { get; set; }
+
+       
     }
 }

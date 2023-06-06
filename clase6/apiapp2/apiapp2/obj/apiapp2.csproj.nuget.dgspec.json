@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elmi0\\Desktop\\apiapp2\\apiapp2\\apiapp2.csproj": {}
+    "C:\\Users\\A\\Desktop\\facu\\Progra3-guia\\clase6\\apiapp2\\apiapp2\\apiapp2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elmi0\\Desktop\\apiapp2\\apiapp2\\apiapp2.csproj": {
+    "C:\\Users\\A\\Desktop\\facu\\Progra3-guia\\clase6\\apiapp2\\apiapp2\\apiapp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elmi0\\Desktop\\apiapp2\\apiapp2\\apiapp2.csproj",
+        "projectUniqueName": "C:\\Users\\A\\Desktop\\facu\\Progra3-guia\\clase6\\apiapp2\\apiapp2\\apiapp2.csproj",
         "projectName": "apiapp2",
-        "projectPath": "C:\\Users\\elmi0\\Desktop\\apiapp2\\apiapp2\\apiapp2.csproj",
-        "packagesPath": "C:\\Users\\elmi0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elmi0\\Desktop\\apiapp2\\apiapp2\\obj\\",
+        "projectPath": "C:\\Users\\A\\Desktop\\facu\\Progra3-guia\\clase6\\apiapp2\\apiapp2\\apiapp2.csproj",
+        "packagesPath": "C:\\Users\\A\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\A\\Desktop\\facu\\Progra3-guia\\clase6\\apiapp2\\apiapp2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\elmi0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\A\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +41,30 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -51,7 +76,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -63,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

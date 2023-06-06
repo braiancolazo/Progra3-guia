@@ -86,8 +86,8 @@ ingresar a la carpeta
 por unica 
 dotnet tool install --global dotnet-ef
 migraciones:historial de tablas,inserts,update.
-dotnet ef migrations add (nombre que quieras).
-dotnet ef database update
+dotnet ef migrations add (nombre que quieras). --project .csproj
+dotnet ef database update (nombre que quieras). --project .csproj
 
 
 
